@@ -2,6 +2,8 @@ redis-server /path/redis.conf
 
 redis-cli - starts a redis prompt
 
+// From https://gist.github.com/LeCoupa/1596b8f359ad8812c7271b5322c30946
+
 # Strings.
 
 
