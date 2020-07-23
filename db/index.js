@@ -6,8 +6,11 @@ client.on("error", function(error) {
   console.error(error);
 });
 
-// client.del("test-key", redis.print);
-// client.del("test-list", redis.print);
+// FOR TERMINAL
+// brew install redis
+
+client.del("test-key", redis.print);
+client.del("test-list", redis.print);
 
 // KEYS | KEYS | KEYS
 
@@ -15,14 +18,14 @@ client.on("error", function(error) {
 client.set("test-key", "test-value", redis.print);
 client.get("test-key", redis.print);
 
-// incrementing a value
-client.set("foo", 100, redis.print);
-client.incr("foo");
-client.get("foo", redis.print);
+// // incrementing a value
+// client.set("foo", 100, redis.print);
+// client.incr("foo");
+// client.get("foo", redis.print);
 
-// add (append) a value to a key
-client.append("test-key", ", newvalue", redis.print);
-client.get("test-key", redis.print);
+// // add (append) a value to a key
+// client.append("test-key", ", newvalue", redis.print);
+// client.get("test-key", redis.print);
 
 // // LISTS | LISTS | LISTS
 
